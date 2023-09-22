@@ -1,0 +1,65 @@
+.footer {
+    position: fixed; /* Fix position */
+    left: 0;         /* Align to the left side of the viewport */
+    bottom: 0;       /* Align to the bottom of the viewport */
+    width: 100%;     /* Full width */
+    background-color: #282c34; /* Change this to your preferred color */
+    color: white;    /* Change this to your preferred color */
+    text-align: center;
+    padding: 1rem;   /* You can adjust padding according to your preference */
+}
+
+.footer-grid {
+    background-color: #D9D9D9;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    place-items: start;
+}
+
+.footer-logo{
+    width: 100px;
+    /* width: 16vw;
+    max-width: 400px; */
+    height: auto;
+    margin-left: 5vw;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+}
+
+.links {
+    width: 100px;
+    background-color: red;
+    margin-top: 5vw;
+}
+
+.doormat-navigation {
+    width: 20vw; /* or 20% or any other relative unit you prefer */
+    padding-top: 20vw; /* should be equal to width for a square */
+    position: relative;
+    background-color: red;
+    
+    margin-top: 17px;
+}
+
+.contact {
+    width: 20vw; /* or 20% or any other relative unit you prefer */
+    padding-top: 20vw; /* should be equal to width for a square */
+    position: relative;
+    background-color: yellow;
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+.social-media-links {
+    width: 20vw; /* or 20% or any other relative unit you prefer */
+    padding-top: 20vw; /* should be equal to width for a square */
+    position: relative;
+    background-color: green;
+    
+    margin-top: 20px;
+}
+
+.doormat-links {
+    list-style-type: none;
+}

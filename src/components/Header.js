@@ -5,8 +5,10 @@ import './Header.css'
 function Header() {
     return (
         <header className="header-grid">
-           <Hamburger></Hamburger>
-           <img className="header-logo" src="/images/logo.png"></img>
+           <img className="header-grid-logo header-logo" src="/images/logo.png"></img>
+           <div className="header-grid-hamburger">
+               <Hamburger></Hamburger>
+           </div>
         </header>
     )
 }

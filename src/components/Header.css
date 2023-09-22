@@ -3,8 +3,37 @@
     height: auto;
 }
 
-.header-grid{
+.header-grid {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 30vw 30vw;
     margin: 20px;
+}
+
+.header-grid-hamburger {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+}
+
+.header-grid-logo {
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+
+@media (min-width: 768px) {
+    .header-grid {
+        grid-template-columns: 30vw 100vw;
+        place-items: center;
+        margin-top: 30px;
+    }
+
+    .header-grid-logo {
+        grid-column-start:1;
+        grid-column-end: 1;
+    }
+
+    .header-grid-hamburger {
+        grid-column-start: 3;
+    }
+
 }
