@@ -1,3 +1,5 @@
-/* .main-content{
-    flex: 1;
-} */
+.dummy_place_holder {
+    width: 375px;
+    height: 800px;
+    background-color: red;
+}

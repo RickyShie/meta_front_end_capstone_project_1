@@ -1,19 +1,7 @@
-.footer {
-    position: fixed; /* Fix position */
-    left: 0;         /* Align to the left side of the viewport */
-    bottom: 0;       /* Align to the bottom of the viewport */
-    width: 100%;     /* Full width */
-    background-color: #282c34; /* Change this to your preferred color */
-    color: white;    /* Change this to your preferred color */
-    text-align: center;
-    padding: 1rem;   /* You can adjust padding according to your preference */
-}
-
 .footer-grid {
     background-color: #D9D9D9;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
     place-items: start;
 }
 
@@ -23,43 +11,63 @@
     max-width: 400px; */
     height: auto;
     margin-left: 5vw;
-    margin-top: 5vw;
+    margin-top: 13vw;
     margin-bottom: 5vw;
 }
 
-.links {
-    width: 100px;
-    background-color: red;
-    margin-top: 5vw;
+.section-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .doormat-navigation {
     width: 20vw; /* or 20% or any other relative unit you prefer */
-    padding-top: 20vw; /* should be equal to width for a square */
-    position: relative;
-    background-color: red;
-    
-    margin-top: 17px;
+     /* should be equal to width for a square */
 }
 
 .contact {
     width: 20vw; /* or 20% or any other relative unit you prefer */
-    padding-top: 20vw; /* should be equal to width for a square */
-    position: relative;
-    background-color: yellow;
+     /* should be equal to width for a square */ 
     grid-column-start: 2;
     grid-row-start: 2;
 }
 
 .social-media-links {
     width: 20vw; /* or 20% or any other relative unit you prefer */
-    padding-top: 20vw; /* should be equal to width for a square */
+     /* should be equal to width for a square */
     position: relative;
     background-color: green;
-    
-    margin-top: 20px;
 }
 
 .doormat-links {
     list-style-type: none;
+}
+
+@media (min-width: 768px) {
+
+    .footer-logo{
+        margin-top: 54px;
+        margin-left: 100px;
+    }
+    .section-links{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 50px;
+        
+        margin-right: 100px;
+    }
+
+    .doormat-navigation{
+        grid-column-start: 1;
+    }
+
+    .contact{
+        grid-column-start: 2;
+    }
+
+    .social-media-links{
+        grid-column-start: 3;
+    }
+
 }

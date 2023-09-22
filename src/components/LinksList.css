@@ -1,0 +1,21 @@
+.linkslist{
+    display: grid;
+    grid-template-rows: 50px 50px;
+    gap: 6px;
+    place-items: start;
+    margin: 30px 0px;
+}
+
+.link-title{
+    color: #495E57;
+    text-align: left;
+}
+
+.links {
+    display: grid;
+    place-items: start;
+}
+
+.links a{
+    text-decoration: none;
+}

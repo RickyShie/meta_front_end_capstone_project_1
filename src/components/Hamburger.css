@@ -13,7 +13,7 @@
     top: 0;
     left: -250px; /* Hide menu off-screen */
     width: 190px;
-    height: 50%;
+    height: 30%;
     background-color: #495E57;
     overflow-y: auto;
     transition: left 0.3s ease;
@@ -22,9 +22,9 @@
   }
   
   .menu a {
-    padding: 10px 15px;
+    padding: 5px 15px;
     text-decoration: none;
-    font-size: 25px;
+    font-size:18px;
     color: white;
     display: block;
     transition: 0.3s;

@@ -37,16 +37,9 @@
   }
 }
 
-/* #root {
-  display: grid;
-  grid-template-rows: 2fr 5fr 2fr auto;
-} */
-.App{
+
+.app-container {
   display: flex;
   flex-direction: column;
-  height: 100%;
-}
-
-.Main {
-  flex-grow: 1;
+  min-height: 100vh;
 }

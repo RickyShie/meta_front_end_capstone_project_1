@@ -4,7 +4,9 @@ import "./Main.css"
 function Main(){
     return (
         <main className="main-content">
-            This is main
+        <div className="dummy_place_holder">
+            hello
+        </div>
         </main>
     )
 }
