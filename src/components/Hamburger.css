@@ -1,0 +1,76 @@
+/* Hamburger.css */
+.hamburger-container {
+    position: relative;
+  }
+  
+  .hamburger-button {
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  .menu {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Hide menu off-screen */
+    width: 190px;
+    height: 100%;
+    background-color: #495E57;
+    overflow-y: auto;
+    transition: left 0.3s ease;
+    padding-top: 60px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  }
+  
+  .menu a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .menu a:hover {
+    background-color: #555;
+  }
+  
+  .menu.open {
+    left: 0; /* Show menu on-screen */
+  }
+
+
+  @media (min-width: 768px) {
+    .hamburger-button {
+      display: none; /* Hide hamburger button */
+    }
+  
+    .menu {
+      position: relative; /* Change position to relative */
+      left: 0 !important; /* Make sure it’s showing on the screen */
+      height: auto; /* Adjust height to auto */
+      width: auto; /* Adjust width to auto */
+      background-color: transparent; /* Set background color to transparent */
+      box-shadow: none; /* Remove box shadow */
+      padding-top: 0; /* Remove padding top */
+      display: flex; /* Change to flex display */
+      align-items: center; /* Center align items vertically */
+      justify-content: space-around; /* Distribute items evenly */
+      max-width: 90vw;
+      margin: auto;
+    }
+  
+    .menu a {
+      color: #333; /* Set color to black */
+      padding: 0; /* Remove padding */
+      font-size: 16px; /* Adjust font size */
+      margin-right: 20px;
+    }
+
+    .menu a:last-child{
+        margin-right: 0;
+    }
+  
+    .menu a:hover {
+      background-color: transparent; /* Set transparent background on hover */
+    }
+  }
