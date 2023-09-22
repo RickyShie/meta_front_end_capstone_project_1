@@ -1,12 +1,13 @@
 import React from "react";
 import "./Main.css"
+import Hero from "./Hero";
+import Specials from "./Specials";
 
 function Main(){
     return (
         <main className="main-content">
-        <div className="dummy_place_holder">
-            hello
-        </div>
+            <Hero></Hero>
+            <Specials></Specials>
         </main>
     )
 }

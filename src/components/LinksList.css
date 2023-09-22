@@ -19,3 +19,9 @@
 .links a{
     text-decoration: none;
 }
+
+@media (min-width: 768px) {
+    .linkslist{
+        gap: 32px;
+    }
+}
