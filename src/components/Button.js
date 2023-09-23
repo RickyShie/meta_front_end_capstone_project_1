@@ -10,7 +10,7 @@ function Button(props) {
     }
 
     return (
-        <button className={`custom-button ${isClicked ? 'clicked' : 'normal'}`} onClick={props.onClick}>
+        <button className={`custom-button ${isClicked ? 'clicked' : 'normal'}`} onClick={handleClick}>
             {props.label}
         </button>
     )
