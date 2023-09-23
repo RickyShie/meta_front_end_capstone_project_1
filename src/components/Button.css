@@ -1,0 +1,25 @@
+.custom-button {
+  padding: 8px 22px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s, color 0.3s; /* Added color to transition */
+  text-align: center;
+  font-family: 'Karla', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+/* Specificity for normal and clicked states */
+.custom-button.normal {
+  background-color: #F4CE14;
+  color: darkgreen; /* Specific color mentioned, instead of a variable */
+}
+
+.custom-button.clicked {
+  background-color: blue;
+  color: white;
+}

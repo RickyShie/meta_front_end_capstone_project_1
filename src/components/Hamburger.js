@@ -30,7 +30,7 @@ const Hamburger = () => {
       </button>
       <div className={`menu ${isOpen ? 'open' : ''}`} ref={menuRef}>
         {/* Your Navbar items here */}
-        <a href="#home">Home</a>
+        <a className="section-title" href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#menu">Menu</a>
         <a href="#reservations">Reservations</a>

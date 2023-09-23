@@ -1,7 +1,43 @@
 .hero-grid{
     background-color: lightblue;
-    height: 500px; 
+    display: grid;
+    place-items: start;
+    background-color: #495E57;
+    padding: 20px 0px;
 }
 
-/* height: 500px;  is just for now */
+.hero-grid-items {
+    margin: 15px 40px;
+}
+
+.hero-image{
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.hero-title {
+    color: var(--Primary-light-color, #F4CE14);
+    font-family: 'Markazi Text';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.hero-subtitle {
+    color: var(--Secondary-color-3, #EDEFEE);
+    font-family: Markazi Text;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.hero-description {
+    color: var(--Secondary-color-3, #EDEFEE);
+    display: block;
+    font-family: Karla;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+}
 
