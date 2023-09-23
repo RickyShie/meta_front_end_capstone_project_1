@@ -1,4 +1,15 @@
 .specials-grid{
     background-color: lightpink;
-    height: 500px;
+    display: grid;
+}
+
+.special-title {
+    color: #000;
+    /* Display Title */
+    font-family: Markazi Text;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 25px;
 }

@@ -1,0 +1,43 @@
+.card-grid-container{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 440px;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #EDEFEE;
+    margin: 25px;
+}
+
+.title-price-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 35px;
+}
+
+
+.dish-title{
+    color: #000;
+    /* Card_title */
+    font-family: Markazi Text;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 90%; /* 21.6px */
+}
+
+.dish-image{
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 15px;  /* Optional, based on your design preference */
+    border-top-right-radius: 15px;
+}
+
+.dish-description{
+    margin: 0px 33px;
+}
+
+.button-container{
+    margin: 20px 30px;
+}
