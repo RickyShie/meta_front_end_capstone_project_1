@@ -1,13 +1,20 @@
 import React from "react";
 import "./Specials.css";
 import Card from "./Card";
+import dishes from "../data";
+
+console.log(dishes);
+
+dishes.map(dish => {console.log(dish.description);})
 
 
 function Specials() {
     return (
         <section className="specials-grid">
             <h1 className="special-title">This week's specials!</h1>
-            <Card title="Bruschetta" price="12.99" description="The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons."></Card>
+            {dishes.map(dish => {
+            return <Card key={dish.id} title={dish.title} price={dish.price} description={dish.description} imageName={dish.imageName}> 
+            </Card>})}
         </section>
     )
 }
