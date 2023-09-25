@@ -13,7 +13,7 @@ function Hero() {
                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
                nisi ut aliquip ex ea commodo consequat.</p>
             <img className="hero-grid-items hero-image" src="/images/restaurant_food.jpg"></img>
-            <div className="hero-grid-items">
+            <div className="hero-grid-items reserve-button">
             <Button className="hero-grid-items reserve-button" label="Reserve a Table"></Button>
             </div>
         </section>

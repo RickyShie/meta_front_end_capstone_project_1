@@ -41,3 +41,44 @@
     font-weight: 500;
 }
 
+
+@media  (min-width: 768px) and (max-width: 1024px){
+    .hero-grid {
+        grid-template-columns: 50vw 1fr;
+        grid-template-rows: 5vh 5vh 20vh 5vh;
+        padding-bottom: 3vh;
+    }
+
+    .hero-grid-items.hero-subtitle{
+        grid-row-start: 2;
+    }
+
+    .hero-grid-items.hero-description {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    .hero-grid-items.hero-image {
+        grid-column-start: 3;
+        grid-row-start: 1;
+        grid-row-end: 4;
+        width: 40vw;
+    }
+    .hero-grid-items.reserve-button {
+        grid-row-start: 4;
+    }
+
+    .hero-title {
+        font-size: 6vw;
+    }
+
+    .hero-subtitle{
+        font-size: 6vw;
+    }
+
+    .hero-description{
+        font-size: 3vw;
+    }
+}
+
