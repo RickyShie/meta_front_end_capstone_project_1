@@ -1,10 +1,9 @@
 .hero-grid{
     background-color: lightblue;
     display: grid;
-    
     place-items: start;
     background-color: #495E57;
-    padding-left: 14vw;
+    
 
 }
 

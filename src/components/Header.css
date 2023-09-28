@@ -6,7 +6,8 @@
 .header-grid {
     display: grid;
     grid-template-columns: 30vw 30vw;
-    margin: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .header-grid-hamburger {
