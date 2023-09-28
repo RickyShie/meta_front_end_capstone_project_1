@@ -2,19 +2,10 @@
     background-color: lightblue;
     display: grid;
     place-items: start;
+    grid-template-rows: auto-fit;
     background-color: #495E57;
-    
+    padding-bottom: 4vh;
 
-}
-
-.hero-grid-items {
-    
-}
-
-.hero-image{
-    width: 20rem;
-    height: auto;
-    border-radius: 10px;
 }
 
 .hero-title {
@@ -23,7 +14,11 @@
     font-size: 3rem;
     font-style: normal;
     font-weight: 500;
-    margin: 2rem 0.5rem;
+    margin-left: 10vw;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
 }
 
 .hero-subtitle {
@@ -32,6 +27,11 @@
     font-size: 2rem;
     font-style: normal;
     font-weight: 400;
+    margin-left: 10vw;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
 
 .hero-description {
@@ -41,9 +41,66 @@
     font-size: 1.5rem;
     font-style: normal;
     font-weight: 500;
-    /* margin-left: 13vw;
-    margin-right: 13vw;
-    max-width: 600px; */
+    max-width: 280px;
+    margin-left: 10vw;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.hero-image{
+    width: 50vw;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 2vh;
+    margin-left: 10vw;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.reserve-button{
+    margin-top: 4vh;
+    margin-left: 10vw;
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .hero-grid{
+        grid-template-columns: 1fr 3fr;
+        place-items: start;
+    }
+
+    .hero-grid-items.hero-image{
+        margin-left: 9vw;
+    }
+
+    .hero-subtitle{
+        grid-column-start: 1;
+    }
+
+    .hero-description{
+        grid-column-start: 1;
+        text-align: start;
+        width: 100vw;
+    }
+
+    .hero-image{
+        min-width: 300px;
+        width: 35vw;
+        max-width: 390px;
+        height: auto;
+        grid-column-start: 3;
+        grid-row-start: 1;
+        grid-row-end: 4;
+        margin-top: 5vh;
+    }
+
+    .hero-grid-items.reserve-button{
+        margin-top: 5vh;
+        /* margin-left: 15vw; */
+    }
 }
 
 
