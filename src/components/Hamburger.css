@@ -1,6 +1,8 @@
 /* Hamburger.css */
 .hamburger-container {
     position: relative;
+    padding-left: 10vw;
+    padding-right: 10vw;
   }
   
   .hamburger-button {
@@ -60,8 +62,8 @@
       display: flex; /* Change to flex display */
       align-items: center; /* Center align items vertically */
       justify-content: space-around; /* Distribute items evenly */
+      gap: 2vw;
       max-width: 90vw;
-      margin: auto;
     }
   
     .menu a {
