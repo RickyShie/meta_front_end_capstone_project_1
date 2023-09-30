@@ -1,14 +1,25 @@
 .specials-grid{
     display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
 }
 
 .special-title {
     color: #000;
     /* Display Title */
     font-family: Markazi Text;
-    font-size: 30px;
+    font-size: 40px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    margin-left: 10vw;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 768px){
+    .specials-grid{
+        grid-template-columns: auto auto;
+    }
 }
